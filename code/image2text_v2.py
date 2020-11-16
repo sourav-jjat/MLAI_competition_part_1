@@ -420,7 +420,7 @@ for i in range(6):
 
 filtered_data7 = np.concatenate((filtered_data6, np.array(tag_data).reshape(len(filtered_data6),1)), axis=1)
 df = pd.DataFrame(data=filtered_data7, columns=["Tag/ID", "xmin", "ymin", "xmax", "ymax", "Type"])
-df[['Tag/ID','Type','xmin','xmax','ymin','ymax']].to_csv(path + '/../output/' + filename + '.csv', index=False,
+df[['Tag/ID','Type','xmin','xmax','ymin','ymax']].to_csv(path + '/../' + filename + '.csv', index=False,
                                                           sep=',', encoding='utf-8-sig')
 
 
